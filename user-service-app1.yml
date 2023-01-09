@@ -16,17 +16,17 @@ spec:
     spec:
       containers:
         - name: user-service-container
-          image: 221694501242.dkr.ecr.us-east-1.amazonaws.com/frontend:frontendv1
+          image: 
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
             - name: DB_HOST
-              value: "database-2-instance-1.cwsxjhx6xuwn.us-east-1.rds.amazonaws.com"
+              value: ""
             - name: DB_USER
-              value: "admin"
+              value: ""
             - name: DB_PASS
-              value: "Admin123"
+              value: ""
 ---
 apiVersion: v1
 kind: Service
